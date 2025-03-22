@@ -41,7 +41,7 @@ def emotion_detector(text_to_analyse):  # Define a function named emotion_detect
             'dominant_emotion': dominant_emotion
         }
 
-    # If the response status code is 500, return a dictionary with all emotions as None
+    # If the response status code is 400, return a dictionary with all emotions as None
     elif response.status_code == 400:
         return {
             'anger': None,
